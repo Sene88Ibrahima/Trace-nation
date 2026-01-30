@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { LogIn, LogOut, Shield, UserPlus, User, Home, Info, ChevronDown, LogOut as LogOutIcon } from "lucide-react";
+import { LogIn, LogOut, Shield, UserPlus, User, Home, Info, ChevronDown } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/components/ui/use-toast";
@@ -138,29 +138,6 @@ const Navbar = () => {
                     <DropdownMenuSeparator />
                     <DropdownMenuItem onClick={handleLogout} className="text-red-600 cursor-pointer">
                       <LogOut className="mr-2 h-4 w-4" />
-                      <span>Déconnexion</span>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                  <DropdownMenuContent className="w-56" align="end">
-                    <DropdownMenuLabel>Mon compte</DropdownMenuLabel>
-                    <DropdownMenuSeparator />
-                    
-                    {/* Options du profil */}
-                    <DropdownMenuItem asChild>
-                      <Link to="/profile" className="w-full cursor-pointer">
-                        <User className="mr-2 h-4 w-4" />
-                        <span>Mon profil</span>
-                      </Link>
-                    </DropdownMenuItem>
-                    
-                    <DropdownMenuSeparator />
-                    
-                    {/* Déconnexion */}
-                    <DropdownMenuItem 
-                      className="text-red-600 focus:text-red-700 focus:bg-red-50 cursor-pointer"
-                      onClick={handleLogout}
-                    >
-                      <LogOutIcon className="mr-2 h-4 w-4" />
                       <span>Déconnexion</span>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
