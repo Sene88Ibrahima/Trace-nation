@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/components/ui/use-toast';
-import { UserRole } from '@/hooks/useAuth';
+import { UserRole } from '@/contexts/AuthContext';
 
 export default function CreateAdminPage() {
   const [email, setEmail] = useState('');

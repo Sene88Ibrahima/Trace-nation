@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { UserRole } from "@/hooks/useAuth";
+import { UserRole } from "@/contexts/AuthContext";
 
 interface RoleBadgeProps {
   role: UserRole;

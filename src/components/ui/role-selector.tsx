@@ -1,5 +1,5 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { UserRole } from "@/hooks/useAuth";
+import { UserRole } from "@/contexts/AuthContext";
 
 interface RoleSelectorProps {
   value: UserRole;

@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 // Utilisation du type UserRole depuis useAuth
-import { UserRole } from '@/hooks/useAuth';
+import { UserRole } from '@/contexts/AuthContext';
 
 export interface User {
   id: string;
